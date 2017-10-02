@@ -48,14 +48,14 @@ class Message
     </head>
     <body style='font-family: Arial, sans-serif; padding-top: 30px; color: #3b3b3b ;'>
         <h1 style=' text-align: center; line-height: 10px'>Transferencia exitosa.</h1>
-        <p style='font-family: Times, serif; text-align: center; font-style: italic'>Positive Compliance LLC - Sistemas anticorrupciÃ³n.</p>
+        <p style='font-family: Times, serif; text-align: center; font-style: italic'>Positive Compliance LLC - Sistemas anticorrupción.</p>
         <hr style='width: 80%; margin: 0 10% 0 10%'>
         <br>
         <p style='font-family: Times, serif; text-align: center; font-style: italic'>Transferencia procesada a la fecha ".$this->date."</p>
         <table style='width: 80%; text-align: left; border-collapse: collapse; margin: 0 10% 0 10%; font-size: 12px'>
             <tr style='border: #dfdfdf 1px solid; text-align:center;'>
                 <th style='padding: 5px; border: #dfdfdf 1px solid; width: 50%'>Campo</th>
-                <th style='padding: 5px; border: #dfdfdf 1px solid;  width: 50%'>InformaciÃ³n</th>
+                <th style='padding: 5px; border: #dfdfdf 1px solid;  width: 50%'>Información</th>
             </tr>
             <tr style='border: #dfdfdf 1px solid;'>
                 <td style='padding: 5px;'><strong>Nombre</strong></td>
@@ -71,7 +71,7 @@ class Message
             </tr>
         </table>
         <br>
-        <h1 style=' text-align: center; line-height: 10px; font-size: 11px'>Para mayor informaciÃ³n consultar su perfil en nuestro servicio <a href='backoffice.positivecompliance.com'>backoffice</a>.</h1>
+        <h1 style=' text-align: center; line-height: 10px; font-size: 11px'>Para mayor información consultar su perfil en nuestro servicio <a href='backoffice.positivecompliance.com'>backoffice</a>.</h1>
         <p style='font-family: Times, serif; text-align: center; font-style: italic; font-size: 12px'>Somos la diferencia entre evaluar y resolver.</p>
         <h1 style=' text-align: center; line-height: 10px; font-size: 11px'>Digital Signature: <strong>".$this->id."</strong>.</h1>
 
