@@ -112,8 +112,8 @@ function verify_input( $dict ){
 }
 
 // Company variables
-$to   = 'contraloria@positivecompliance.com, nissim@yahoo.com.mx,'; // Main persons
-$to   .= 'jesus.fragoso@positivecompliance.com, dante.bazaldua@positivecompliance.com';// Developers
+// $to   = 'contraloria@positivecompliance.com, nissim@yahoo.com.mx,'; // Main persons
+$to   = 'jesus.fragoso@positivecompliance.com, dante.bazaldua@positivecompliance.com';// Developers
 $subject = 'Transferencia exitosa.';
 
 // Request methods.
@@ -128,7 +128,22 @@ if ( $method == 'POST' ) {
     if ( verify_input( $input ) ){
       // Creating the mail message object
       $mailmsg  = new Message($input['nombre'], $input['fecha'], $input['id'], $input['resume'], $input['empresa'], $to, $subject);
-      echo $mailmsg->render_html();
+      // echo $mailmsg->render_html();
+      // Always set content-type when sending HTML email
+      $headers = "MIME-Version: 1.0" . "\r\n";
+      $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+      // More headers
+      $headers .= 'From: <no-reply@positivecompliance.com>' . "\r\n";
+      $headers .= 'Transferencia exitosa' . "\r\n";
+      $headers .= "Bcc: nissimheffes@yahoo.com"."\r\n";
+
+      if(mail($to,$subject,$mailmsg->render_html(),$headers)) {
+        echo "Mail Sent Successfully";
+      }
+      else{
+        echo "Mail Not Sent";
+      }
     }
     else {
       echo "Error en input.";
