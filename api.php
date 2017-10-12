@@ -113,7 +113,7 @@ function verify_input( $dict ){
 
 // Company variables
 // $to   = 'contraloria@positivecompliance.com, nissim@yahoo.com.mx,'; // Main persons
-$to   = 'jesus.fragoso@positivecompliance.com, dante.bazaldua@positivecompliance.com';// Developers
+$to   = 'tania.ubaldo@positivecompliance.com, jesus.fragoso@positivecompliance.com, dante.bazaldua@positivecompliance.com';// Developers
 $subject = 'Transferencia exitosa.';
 
 // Request methods.
