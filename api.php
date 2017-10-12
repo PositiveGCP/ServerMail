@@ -134,7 +134,7 @@ if ( $method == 'POST' ) {
       $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
       // More headers
-      $headers .= 'From: <no-reply@positivecompliance.com>' . "\r\n";
+      $headers .= 'From: <noreply@positivecompliance.com>' . "\r\n";
       $headers .= 'Transferencia exitosa' . "\r\n";
       $headers .= "Bcc: nissimheffes@yahoo.com"."\r\n";
 
