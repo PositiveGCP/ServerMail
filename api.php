@@ -194,8 +194,8 @@ function verify_input( $dict ){
 
 // Company variables
 // $to   = 'contraloria@positivecompliance.com, nissim@yahoo.com.mx,'; // Main persons
-// $to   = 'tania.ubaldo@positivecompliance.com, jesus.fragoso@positivecompliance.com, dante.bazaldua@positivecompliance.com';// Developers
-$to = 'dante.bazaldua@positivecompliance.com';
+$to   = 'tania.ubaldo@positivecompliance.com, jesus.fragoso@positivecompliance.com, dante.bazaldua@positivecompliance.com, ricardo.vega@positivecompliance.com, jose.fragoso@positivecompliance.com';// Developers
+// $to = 'dante.bazaldua@positivecompliance.com';
 $subject = 'Transferencia exitosa.';
 
 // Request methods.
@@ -238,10 +238,10 @@ if ( $method == 'POST' ) {
   }
 }
 else {
-  $mail = new Message("dante", "dante", "dante", "dante", "dante", $to, $subject);
-  $html = $mail->render_html();
-  echo "$html";
-  // not_found();
+//   $mail = new Message("dante", "dante", "dante", "dante", "dante", $to, $subject);
+//   $html = $mail->render_html();
+//   echo "$html";
+  not_found();
 }
 
 ?>
